@@ -8,7 +8,7 @@
     * 'pry-rails'
     * 'quiet_assets'
     * 'faker'
-  1. useful methods:
+  1. useful methods to remember:
     * BCrypt::Password.new(password_digest)
       * .is_pasword?(password)
     * BCrypt::Password.create(password)
@@ -23,14 +23,15 @@
     * User model & UsersController
     * SessionsController
 
-  2. Edit Migration
+  2. Edit Migrations
     1. add table columns & null constraints
     2. add indices & unique constraints
 
-  2. General setup
-    2. add route resources
+  2. General Model/Controller setup
+    1. rake db:migrate
+    2. add config/route resources
     1. add validations
-    2. define controller actions
+    2. controller actions
       * show, new, create, edit, update, destroy
 
 ## 3. Password Handling
@@ -45,15 +46,15 @@
     * self.find_by_credentials(username, password)
 
 ## 2. Session Handling
-  1. In the User Model
+  1. User
     1. validates :session_token
     1. add authentication methods
       * after_initialize :ensure_session_token
       * self.generate_session_token
       * reset_session_token!
-    2. In the ApplicationController
-      * define login methods: login!(user), define current_user, define require_current_user!
-      * helper_method :current_user
+  2. ApplicationController
+    * define login methods: login!(user), define current_user, define require_current_user!
+    * helper_method :current_user
 
 ## 3. Controller Actions
   1. UsersController
@@ -63,4 +64,3 @@
   2. SessionController
     1. actions
       * new, create, destroy
-    2.
