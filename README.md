@@ -6,15 +6,23 @@
   2. Other steps
 
 ## 2. User Model
-  1. Generate model and controller
+  1. Generate models and controller
+    * User model & UsersController
+    * SessionsController
 
   2. Edit Migration
     1. add table columns
     2. add indices
 
-  3. Handle the Password
+  2. General setup
+    1. add validations
+    2. add route resources
+    2. define controller actions
+      * show, new, create, edit, update, destroy
 
-    1. In the User Model
+##  3. Handle the Password
+
+    * In the User Model
       1. Handle the Password
         1. add validations
           * :password_digest, presence: true
@@ -26,9 +34,7 @@
           * is_password?(password)
           * self.find_by_credentials(username, password)
 
+##  2. Handle the Session
+    1. In the User Model
     2. In the UsersController
-
-
-
-  2. Handle the Session Token
-    1.
+    2. In the SessionController
