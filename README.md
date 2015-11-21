@@ -2,8 +2,21 @@
 
 ## 1. Configure
   1. Add Gems to Gemfile
-    * BCrypt
-  2. Other steps
+    * 'bcrypt'
+    * 'better_errors'
+    * 'binding_of_caller'
+    * 'pry-rails'
+    * 'quiet_assets'
+    * 'faker'
+  1. Remember:
+    * BCrypt::Password.new(password_digest)
+      * .is_pasword?(password)
+    * BCrypt::Password.create(password)
+    * SecureRandom.urlsafe_base64(16)
+    * Faker:: ?
+      * Name.name
+      * Internet.email
+      * Lorem.words, .sentence, .paragraph
 
 ## 2. Setup
   1. Generate models and controller
@@ -39,7 +52,11 @@
       * self.generate_session_token
       * reset_session_token!
     2. In the ApplicationController
-      * define login methods: login!(user), define current_user, define require_current_user
+      * define login methods: login!(user), define current_user, define require_current_user!
       * helper_method :current_user
 
 ## 3. Controller Actions
+  1. UsersController
+    * before_action: require_current_user!
+  2. SessionController
+    *
