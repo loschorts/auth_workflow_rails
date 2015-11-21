@@ -42,7 +42,7 @@ Please let me know of anything incorrect or incomplete. I'd love to hear your fe
   1. User: add validations
     * :password_digest, presence: true
     * :password, allow_nil: true
-  2. User: password sets password_digest
+  2. User: initialize sets password_digest, not password
     * attr_reader :password
     * password= assigns password_digest
   3. User: add password functions
