@@ -4,6 +4,7 @@
   1. Add Gems to Gemfile
     * BCrypt
   2. Other steps
+  
 ## 2. User Model
   1. Generate model and controller
   2. Edit Migration
