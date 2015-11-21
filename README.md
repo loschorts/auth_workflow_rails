@@ -21,7 +21,7 @@
       * show, new, create, edit, update, destroy
 
 ##  3. Handle the Password
-     In the User Model
+  1. In the User Model
       1. Handle the Password
         1. add validations
           * :password_digest, presence: true
@@ -34,6 +34,6 @@
           * self.find_by_credentials(username, password)
 
 ##  2. Handle the Session
-    1. In the User Model
-    2. In the UsersController
-    2. In the SessionController
+  1. In the User Model
+  2. In the UsersController
+  2. In the SessionController
