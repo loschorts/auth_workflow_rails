@@ -15,9 +15,9 @@
       1. add validations
         * :password_digest, presence: true
         * :password, allow_nil: true
-      2. override password= to render digest
-        * attr_reader password
-        * password= assigns pw_digest
+      2. override 'password=' to render digest
+        * attr_reader :password
+        * 'password=' assigns password_digest
       3. password functions
         * is_password? password
         * self.find_by_credentials(username, password)
