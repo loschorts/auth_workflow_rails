@@ -8,7 +8,7 @@
     * 'pry-rails'
     * 'quiet_assets'
     * 'faker'
-  1. Remember:
+  1. useful methods:
     * BCrypt::Password.new(password_digest)
       * .is_pasword?(password)
     * BCrypt::Password.create(password)
@@ -58,5 +58,9 @@
 ## 3. Controller Actions
   1. UsersController
     * before_action: require_current_user!
+    * user_params
+      * params.require().permit()
   2. SessionController
-    *
+    1. actions
+      * new, create, destroy
+    2.
