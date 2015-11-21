@@ -14,7 +14,7 @@
     1. Handle the password
       1. add validations
         * :password_digest, presence: true
-        * for :password, allow_nil: true
+        * :password, allow_nil: true
       2. override password= to render digest
         * attr_reader password
         * password= assigns pw_digest
