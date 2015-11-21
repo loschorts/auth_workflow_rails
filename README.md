@@ -21,8 +21,7 @@
       * show, new, create, edit, update, destroy
 
 ##  3. Handle the Password
-
-    1. In the User Model
+     In the User Model
       1. Handle the Password
         1. add validations
           * :password_digest, presence: true
