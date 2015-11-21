@@ -19,15 +19,15 @@
       * Lorem.words, .sentence, .paragraph
 
 ## 2. Setup
-  1. Generate models and controller
+  1. Generate
     * User model & UsersController
     * SessionsController
 
-  2. Edit Migrations
-    1. add table columns & null constraints
-    2. add indices & unique constraints
+  2. Migrate
+    1. table columns & null constraints
+    2. indices & unique constraints
 
-  2. General Model/Controller setup
+  2. General Setup
     1. rake db:migrate
     2. add config/route resources
     1. add validations
