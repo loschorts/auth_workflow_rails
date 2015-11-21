@@ -1,7 +1,9 @@
 #Authentication Workflow
 
 This document is meant to serve as a rough map of what needs to be defined and specified
-for creating users, passwords, and sessions. I'd love to hear your feedback!
+for creating users, passwords, and sessions.
+
+Please let me know of anything incorrect or incomplete. I'd love to hear your feedback!
 
 
 ## 1. Configure / FYI
