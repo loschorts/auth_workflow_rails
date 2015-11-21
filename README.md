@@ -26,7 +26,6 @@
     1. table columns & null constraints
     2. indices & unique constraints
   2. General Setup
-    1. rake db:migrate
     2. add config/route resources
     1. add validations
     2. controller actions
