@@ -4,7 +4,7 @@
   1. Add Gems to Gemfile
     * BCrypt
   2. Other steps
-  
+
 ## 2. User Model
   1. Generate model and controller
   2. Edit Migration
@@ -13,6 +13,7 @@
   3. Edit Model
     1. Handle the password
       1. add validations
+        * :password_digest, presence: true
         * for :password, allow_nil: true
       2. override password= to render digest
         * attr_reader password
