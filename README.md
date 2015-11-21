@@ -20,7 +20,7 @@
     2. define controller actions
       * show, new, create, edit, update, destroy
 
-## 3. Handle the Password
+## 3. Password Handling
   1. User: add validations
     * :password_digest, presence: true
     * :password, allow_nil: true
@@ -31,7 +31,15 @@
     * is_password?(password)
     * self.find_by_credentials(username, password)
 
-## 2. Handle the Session
+## 2. Session Handling
   1. In the User Model
-  2. In the UsersController
-  2. In the SessionController
+    1. validates :session_token
+    1. add authentication methods
+      * after_initialize :ensure_session_token
+      * self.generate_session_token
+      * reset_session_token!
+    2. In the ApplicationController
+      * define login methods: login!(user), define current_user, define require_current_user
+      * helper_method :current_user
+
+## 3. Controller Actions
