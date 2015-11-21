@@ -26,11 +26,11 @@
     1. table columns & null constraints
     2. indices & unique constraints
   2. General Setup
-    2. add config/route resources
-    1. add validations
+    2. config/route resources
+    1. validations
     2. controller actions
       * show, new, create, edit, update, destroy
-
+      * user_params
 ## 3. Password Handling
   1. User: add validations
     * :password_digest, presence: true
@@ -56,8 +56,5 @@
 ## 3. Controller Actions
   1. UsersController
     * before_action: require_current_user!
-    * user_params
-      * params.require().permit()
   2. SessionController
-    1. actions
-      * new, create, destroy
+    1. actions: new, create, destroy
