@@ -10,21 +10,21 @@
   2. Edit Migration
     1. add table columns
     2. add indices
-  3. Edit Model
-    1. Handle the password
-      1. add validations
-        * :password_digest, presence: true
-        * :password, allow_nil: true
-      2. override 'password=' to render digest
-        * attr_reader :password
-        * 'password=' assigns password_digest
-      3. password functions
-        * is_password? password
-        * self.find_by_credentials(username, password)
-    2. Handle the Session Token
-  4. Edit Controller
-    1.
-
-
-  2. Handle the session token
+  3. Handle the Password
+    1. In the User Model
+      1. Handle the Password
+        1. add validations
+          * :password_digest, presence: true
+          * :password, allow_nil: true
+        2. override 'password=' to create password_digest
+          * attr_reader :password
+          * 'password=' assigns password_digest
+        3. password functions
+          * is_password?(password)
+          * self.find_by_credentials(username, password)
+    2. In the UsersController
       1.
+
+
+  2. Handle the Session Token
+    1.
