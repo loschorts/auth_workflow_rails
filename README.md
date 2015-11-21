@@ -1,5 +1,9 @@
 #Authentication Workflow
 
+This document is meant to serve as a rough map of what needs to be defined and specified
+for creating users, passwords, and sessions
+
+
 ## 1. Configure / FYI
   1. Gemfile
     * 'bcrypt'
