@@ -1,11 +1,11 @@
 #Authentication Workflow
 
-## 1. Setup
+## 1. Pre
   1. Add Gems to Gemfile
     * BCrypt
   2. Other steps
 
-## 2. User Model
+## 2. Setup
   1. Generate models and controller
     * User model & UsersController
     * SessionsController
