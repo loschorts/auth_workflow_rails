@@ -22,11 +22,9 @@
   1. Generate
     * User model & UsersController
     * SessionsController
-
   2. Migrate
     1. table columns & null constraints
     2. indices & unique constraints
-
   2. General Setup
     1. rake db:migrate
     2. add config/route resources
