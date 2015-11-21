@@ -22,7 +22,7 @@
 
 ##  3. Handle the Password
 
-    In the User Model
+    1. In the User Model
       1. Handle the Password
         1. add validations
           * :password_digest, presence: true
