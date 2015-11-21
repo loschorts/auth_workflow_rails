@@ -1,14 +1,14 @@
 #Authentication Workflow
 
-## 1. Configure
-  1. Add Gems to Gemfile
+## 1. Configure / FYI
+  1. Gemfile
     * 'bcrypt'
     * 'better_errors'
     * 'binding_of_caller'
     * 'pry-rails'
     * 'quiet_assets'
     * 'faker'
-  1. useful methods to remember:
+  1. Methods
     * BCrypt::Password.new(password_digest)
       * .is_pasword?(password)
     * BCrypt::Password.create(password)
