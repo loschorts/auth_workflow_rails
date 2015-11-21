@@ -20,7 +20,7 @@
     2. define controller actions
       * show, new, create, edit, update, destroy
 
-##  3. Handle the Password
+## 3. Handle the Password
   1. In the User Model
       1. Handle the Password
         1. add validations
@@ -33,7 +33,7 @@
           * is_password?(password)
           * self.find_by_credentials(username, password)
 
-##  2. Handle the Session
+## 2. Handle the Session
   1. In the User Model
   2. In the UsersController
   2. In the SessionController
