@@ -1,6 +1,6 @@
 #Authentication Workflow
 
-## 1. Pre
+## 1. Configure
   1. Add Gems to Gemfile
     * BCrypt
   2. Other steps
@@ -11,18 +11,18 @@
     * SessionsController
 
   2. Edit Migration
-    1. add table columns
-    2. add indices
+    1. add table columns & null constraints
+    2. add indices & unique constraints
 
   2. General setup
-    1. add validations
     2. add route resources
+    1. add validations
     2. define controller actions
       * show, new, create, edit, update, destroy
 
 ##  3. Handle the Password
 
-    * In the User Model
+    In the User Model
       1. Handle the Password
         1. add validations
           * :password_digest, presence: true
