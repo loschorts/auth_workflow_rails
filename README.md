@@ -31,6 +31,7 @@
     2. controller actions
       * show, new, create, edit, update, destroy
       * user_params
+      
 ## 3. Password Handling
   1. User: add validations
     * :password_digest, presence: true
